@@ -352,11 +352,13 @@ a:hover {
       right: 100px;
       width: 70%;  
       height: auto;  
-      
+
       @media (min-width: 1400px) {
         width: auto;
-        bottom: -100%;               
+        bottom: -100px;
+        right: 230px;
       }
+      
     }
     
     
@@ -502,6 +504,42 @@ a:hover {
 
 
 
+    
+    @media (min-width: 768px) {
+
+      .container {
+        max-width: 720px;
+      }
+      .btn-toggle-switch .label {
+        display: block;
+      }
+      
+      header .container {     
+        gap: 3rem;      
+      }
+      
+      
+      
+      footer {
+        .credit {
+          display: block;
+        }    
+      }
+      
+      #partners {
+        display: block;
+        
+      }
+      
+      #brand-5, #brand-6 {
+        display: none;
+      }
+      
+      
+      
+    }
+    
+    
     @media (min-width: 1400px) {
       .container {
         max-width: 1320px;       
@@ -537,37 +575,3 @@ a:hover {
         display: flex;
       }
     }
-    
-    @media (min-width: 768px) {
-      .container {
-      max-width: 720px;
-    }
-    .btn-toggle-switch .label {
-      display: block;
-    }
-    
-    header .container {     
-      gap: 3rem;      
-    }
-    
-   
-    
-    footer {
-      .credit {
-        display: block;
-      }    
-    }
-    
-    #partners {
-      display: block;
-    
-    }
-    
-    #brand-5, #brand-6 {
-      display: none;
-    }
-    
- 
-    
-    }
-    
