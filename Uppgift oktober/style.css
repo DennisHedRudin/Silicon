@@ -416,7 +416,7 @@ a:hover {
 
 #partners {
   display: none;
-  padding-top: 1rem;
+  padding-top: 3rem;
   padding-bottom: 2rem;
   
   .container {
@@ -438,9 +438,81 @@ a:hover {
 }
   
 
+#features {
+  
+  display: grid;
+  margin: 4rem;
+  gap: 4rem;
+
+  .img-card {
+    display: none;
+
+    @media (min-width: 1400px) {
+     display: block;
+    }
+  }
+
+  .app-f {
+    display: flex;
+    flex-direction: column;     
+    text-align: center;
+    gap: 3rem; 
+  
+  }
+  
+  @media (min-width: 1400px) {
+    grid-template-columns: 1fr 2fr;
+  }
+  
+}
+
+.f1 {
+
+  h2 {
+    font-weight: 800px;
+    font-size: 40px;
+    margin-top: 0;
+  }
+
+  p{
+    font-size: 18px;
+  }
+
+  @media (min-width: 1400px) {
+    text-align: left;
+   }
+
+}
+
+.service {
+  gap: 2rem;  
+  display: grid;
+
+  @media (min-width: 768px) {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.s-card {
+  display: grid;
+   grid-template-columns: 60px 1fr;
+   text-align: left;
+   gap: 1rem;
+   margin-bottom: 2rem;
+   
+   h4 {
+    margin-top: 0;
+    font-weight: 800px;
+   }
 
 
+}
 
+.img-s {
+  background: var(--color-gray1);
+  padding: 1rem;
+  border-radius: 10px;
+}
 
 
 
