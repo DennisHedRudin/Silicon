@@ -476,6 +476,7 @@ a:hover {
 
   p{
     font-size: 18px;
+    color: var(--color-gray6);
   }
 
   @media (min-width: 1400px) {
@@ -502,10 +503,13 @@ a:hover {
    
    h4 {
     margin-top: 0;
+    margin-bottom: 0.5rem;
     font-weight: 800px;
    }
 
-
+   p {
+    color: var(--color-gray7);
+   }
 }
 
 .img-s {
@@ -515,7 +519,94 @@ a:hover {
 }
 
 
+#how {
+  background-color: var(--color-gray1);
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  text-align: center;
 
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+  }
+
+  h2 {
+    font-weight: 800px;
+  }
+}
+
+.container-iphone {
+
+
+ @media (min-width: 768px) {
+    display:flex;
+    
+ }
+
+ @media (min-width: 1400px) {
+  gap: 5rem;
+ }
+
+}
+
+.how-mobile {
+  @media (min-width: 768px) {
+    display:none;
+ }
+}
+
+.how-tablet {
+ display: none;
+
+ @media (min-width: 768px) {
+  display:block;
+}
+
+@media (min-width: 1400px) {
+  display:none;
+}
+
+}
+
+.how-desktop {
+ display: none;
+
+ @media (min-width: 1400px) {
+  display:block;
+  display: flex;
+
+}
+}
+
+.transfer-1 {
+  @media (min-width: 768px) {
+    display:none;
+ }
+}
+
+.transfer-2 {
+  display: none;
+
+  @media (min-width: 768px) {
+    display:block;
+ }
+  @media (min-width: 1400px) {
+    display:none;
+ }
+}
+
+.transfer-3 {
+  display: none;
+  
+ 
+  @media (min-width: 1400px) {
+    display:block;
+ }
+
+}
 
 .learn-more {
   background-color: var(--color-primary);
