@@ -39,6 +39,10 @@ body, section, div, header, footer, main, aside, nav, blockquote, p, span {
 body {  
   font-family: "Manrope", sans-serif;
   font-optical-sizing: auto;
+
+  p {
+    color: var(--color-gray7);
+  }
 }
 
 .dark {
@@ -615,6 +619,41 @@ a:hover {
 
 }
 
+#show {
+  display: none;
+  h2 {
+    font-size: 32px;
+    font-weight: 800;
+  }
+
+  ul {
+    padding-left: 0;
+  }
+
+  li{
+    color: var(--color-gray7);
+    list-style: none; 
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 1rem;   
+  }
+  
+  @media (min-width: 1400px){
+    width: 1076px;
+    display: block;
+    margin-top: 4rem;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .banking {
+    display: flex;
+    flex-direction: column;
+  }
+
+}
+
 .learn-more {
   background-color: var(--color-primary);
   color: var(--color-white);
@@ -627,34 +666,108 @@ a:hover {
   border: var(--color-primary);
 }
 
-
-
-
-
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-#show {
-  display: none;
+.learn-more:hover {
+  background-color: var(--color-gray5);
+  color: var(--color-white);
+  text-decoration: none;
 }
 
 #contacts {
+  display: none;
+
+  h2 {
+    font-size: 32px;
+    font-weight: 800;
+  }
+  
+  @media (min-width: 1400px){
+    width: 1076px;
+    display: block;
+    margin-top: 4rem;
+    display: flex;
+    justify-content: space-between;
+  }
+}    
+
+.flex-2 {
+ display: flex;
+ margin-bottom: 2rem;
+}
+
+
+
+#clients {
       display: none;
-      
-      
-    }    
-    
-    #clients {
-      display: none;
+
+      background-color: var(--color-gray1);
+
+      .head-client {
+        font-weight: 800;
+        font-size: 40px;
+      }
+
+      @media (min-width: 1400px) {
+        display: block;
+      }
     }
     
+.love {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+ 
+  .head-client {
+    margin-right: 2rem;
+  }
+
+}
+
+.ref-box {
+  background-color: var(--color-white);
+  box-shadow: 0 0 5px #64656746;
+  border-radius: 4px;
+
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  margin-left: 1rem;
+  margin-right: 2rem;
+
+  padding-top: 3rem;
+  padding-bottom: 2rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+
+  display: flex;
+  flex-direction: column;
+
+  position: relative;
+
+  gap: 2rem;
+ 
+
+ 
+
+  .quote {
+    position: absolute;
+    height: 44px;
+    width: 44px;
+    top: -15px;
+    left: 10px;
+  }
+
+  .rating {
+    width: 88px;    
+  }
+
+  .client {
+    width: 258px;
+    height: 48px;
+  }
+
+}
+
+
     
     #FAQ {
       
@@ -952,11 +1065,38 @@ a:hover {
 
 .subscribe {
   background-color: var(--color-gray1);
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+
+  @media (min-width: 768px) {
+    display: flex;
+    flex-direction: row;
+  }
+  
+
+}
+
+.bell {
+  display: flex;
+
+  img {
+    height: 78px;
+    width: 78px;
+  }
 }
 
 .form-input {
   border: 1px solid #333;
   padding: .3rem;
+  height: 40px;
 }
 
 .input-group {
@@ -964,6 +1104,7 @@ a:hover {
 
  .form-input {
   border-radius:.5em 0 0 .5em;
+  border-color: var(--color-gray3);
  }
  
 .btn-sub {
@@ -981,6 +1122,13 @@ a:hover {
   align-items: center;
   text-decoration: none;
   border: 0;
+  cursor: pointer;
+}
+
+.btn-sub:hover {
+  background-color: var(--color-gray5);
+  color: var(--color-white);
+  text-decoration: none;
 }
 
 input-group {
