@@ -41,6 +41,12 @@ body {
   font-optical-sizing: auto;
 }
 
+.dark {
+  color-scheme: dark;
+  background-color: var(--color-dark);
+  color: var(--color-white);
+  
+  }
 
 .container {
   width: 100%;
@@ -85,6 +91,7 @@ a:hover {
   justify-content: center;
   align-items: center;
   text-decoration: none;
+  border: 0;
 }
 
 .btn-primary:hover {
@@ -623,37 +630,31 @@ a:hover {
 
 
 
-/* @media (prefers-color-scheme: dark) {
-  body {
-    background-color: var(--color-dark);
-    color: #FFFF;
-    }
-    
-    } */
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    #show {
-      display: none;
-    }
-    
-    #contacts {
-      display: none;
 
-     
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+#show {
+  display: none;
+}
+
+#contacts {
+      display: none;
+      
+      
     }    
     
     #clients {
       display: none;
     }
+    
     
     #FAQ {
       
@@ -663,7 +664,7 @@ a:hover {
       align-items: center;
       padding-top: 4rem;
       padding-bottom: 3rem;
-
+      
       
       .text {
         margin-bottom: 5rem;
@@ -673,13 +674,28 @@ a:hover {
       .questions {
         display: flex;
         flex-direction: column;
+        grid-area: questions;
         
         @media (min-width: 768px) {
           gap: 2rem;
           
+        }     
+      }
+      
+      .info {
+        grid-area: headline-q;
+        
+        @media (min-width: 1400px) {
+          text-align: left;
+          justify-content: left;
+          padding-bottom: 0;
+          
+          
         }
       }
       
+      
+
       .btn-contact {
         border: none;
         margin-top: 4rem;
@@ -688,8 +704,40 @@ a:hover {
           display: none;        
         }
       }
+      
+      @media (min-width: 1400px) {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:  "headline-q questions"
+        "contact questions"
+        ;
+        
+      }
+
     }
     
+    #contact {
+    display: none;
+    width: 100%;
+      grid-area: contact;
+            
+      img {
+        width: 28px;
+        height: 28px;
+      }
+      @media (min-width: 768px) {
+        display: block;
+        display: flex;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+      }
+    
+      @media (min-width: 1400px) {
+               
+      }
+      
+    }
     
     
     .qa {
@@ -860,24 +908,9 @@ a:hover {
     }
     
    
-    #contact {
-      display: none;
-      
-      img {
-        width: 28px;
-        height: 28px;
-      }
-      @media (min-width: 768px) {
-        display: block;
-        display: flex;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 1rem;
-      }
-      
-    }
     
   .call {
+   
     display: flex;
     flex-direction: column;
     text-align: left;
@@ -917,7 +950,54 @@ a:hover {
 }
 
 
+.subscribe {
+  background-color: var(--color-gray1);
+}
 
+.form-input {
+  border: 1px solid #333;
+  padding: .3rem;
+}
+
+.input-group {
+ display: flex;
+
+ .form-input {
+  border-radius:.5em 0 0 .5em;
+ }
+ 
+.btn-sub {
+  border-radius: 0 .5em .5em 0;
+}
+
+}
+
+.btn-sub {
+  background-color: var(--color-primary);
+  color: var(--color-white);  
+  padding: .5em 2em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  border: 0;
+}
+
+input-group {
+ 
+}
+
+.icon {
+  
+}
+
+.email {
+ padding-left: 2rem;
+ background-image: url(./Image/icon/envelope.svg);
+ background-repeat: no-repeat;
+ background-position: 10px 50%;
+ 
+}
     footer {
       font-size: 14px;
       padding-top: 1rem;
