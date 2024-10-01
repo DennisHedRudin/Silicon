@@ -56,13 +56,9 @@
 
     @media (min-width: 1400px) {
         grid-template-columns: 1fr 2fr;
-      }
-  
+      }  
       
-      @media (min-width: 1400px) {
-        text-align: left;
-       }
-}
+} 
 
 @mixin how-display {
     display: flex;
@@ -94,7 +90,7 @@
     padding-bottom: 2rem;
 }
 
-@mixin nav-display {
+@mixin footer-display {
     display: flex;
     justify-content: center;
     align-items: center;

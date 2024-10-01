@@ -1,0 +1,269 @@
+#FAQ {
+      
+    @include faq-display;
+    
+    
+    .text {
+      margin-bottom: 5rem;
+    }
+    
+    
+    .questions {
+      display: flex;
+      flex-direction: column;
+      grid-area: questions;
+      
+      @media (min-width: 768px) {
+        gap: 2rem;
+        
+      }     
+    }
+    
+    .info {
+      grid-area: headline-q;
+      
+      @media (min-width: 1400px) {
+        text-align: left;
+        justify-content: left;
+        padding-bottom: 0;
+        
+        
+      }
+    }
+    
+    
+
+    .btn-contact {
+      border: none;
+      margin-top: 4rem;
+      
+      @media (min-width: 768px) {
+        display: none;        
+      }
+    }
+    
+    @media (min-width: 1400px) {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-areas:  "headline-q questions"
+      "contact questions"
+      ;
+      
+    }
+
+  }
+  
+  #contact {
+  display: none;
+  width: 100%;
+    grid-area: contact;
+          
+    img {
+      width: 28px;
+      height: 28px;
+    }
+    @media (min-width: 768px) {
+      display: block;
+      display: flex;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+    }
+  
+    @media (min-width: 1400px) {
+             
+    }
+    
+  }
+  
+  
+  .qa {
+    display: grid;
+    grid-template-columns: 6fr 1fr;
+    padding-left: 1rem;
+    align-items: center;
+    text-align: left;
+    border: solid, var(--color-gray2);
+    border-top: none;
+    
+    h4 {
+      font-size: 16px;
+    }
+    
+    
+    @media (min-width: 768px) {
+      box-shadow: 2px 4px 10px var(--color-gray2);
+      border: none;
+      border-radius: 10px;
+      
+    }
+  }
+  
+  .qa1 {
+    display: grid;
+    grid-template-columns: 6fr 1fr;
+    padding-left: 1rem;
+    align-items: center;
+    text-align: left;
+    border: solid, var(--color-gray2);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    
+    
+    h4 {
+      font-size: 16px;
+    }
+    
+    
+    @media (min-width: 768px) {
+      box-shadow: 2px 4px 10px var(--color-gray2);
+      border: none;
+      border-radius: 10px;
+      
+    }
+  }
+  
+  .qa2 {
+    display: grid;
+    grid-template-columns: 6fr 1fr;
+    padding-left: 1rem;
+    align-items: center;
+    text-align: left;
+    border: solid, var(--color-gray2);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    
+    
+    h4 {
+      font-size: 16px;
+    }
+    
+    
+    @media (min-width: 768px) {
+      box-shadow: 2px 4px 10px var(--color-gray2);
+      border: none;
+      border-radius: 10px;
+      
+      .btn-discover {
+        display: none;
+      }
+      .btn-open1 {
+        display: block;
+      }
+      
+    }
+  }
+  
+  .answr {
+    padding: 1rem;
+    text-align: left;
+    font-size: 14px;
+    color: var(--color-gray7);
+    border: solid;
+    border-top: none;
+    border-color: var(--color-gray2);
+    
+    @media (min-width: 768px) {
+      display: none;
+    }
+    
+  }
+  
+  .answr1 {
+    display: none;
+    padding: 1rem;
+    text-align: left;
+    font-size: 14px;
+    color: var(--color-gray7); 
+    border-top: none;
+    border-color: var(--color-gray2);  
+    padding-left: 0;
+    
+    @media (min-width: 768px) {
+      display: block;
+    }
+    
+  }
+  
+  
+  .btn-discover1 {
+    display: none;
+    
+    @media (min-width: 768px) {
+      display: block;
+    }
+  }
+  
+  .btn-open1 {
+    display: none;
+  }
+  
+  .btn-question {
+    @include discover;
+    @include button-colors;
+  }
+  
+  
+  .btn-answer {
+    @include discover;
+    @include button-colors;
+    
+    @media (min-width: 768px) {
+      display: none;
+    }
+  }
+  
+  .btn-answer1 {
+    @include discover;
+    @include button-colors;
+    display: none;
+    
+    @media (min-width: 768px) {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      
+    }
+  }
+  
+ 
+  
+.call {
+ 
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  gap: 1rem;
+  border: solid;
+  border-color: var(--color-gray2);
+  padding: 2rem;
+  margin-top: 2rem;
+  border-radius: 6px;
+  
+  .contact-call {
+    color: var(--color-primary);
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    
+  }
+}
+
+.message {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  gap: 1rem;
+  border: solid;
+  border-color: var(--color-gray2);
+  padding: 2rem;
+  margin-top: 2rem;
+  border-radius: 6px;
+  
+  .contact-mess {
+    display: flex;
+    align-items: center;
+    color: #22C55E;
+    gap: 1rem;
+}
+}

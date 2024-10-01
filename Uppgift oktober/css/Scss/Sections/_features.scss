@@ -1,0 +1,68 @@
+#features {
+  
+    @include features-display;
+  
+    .img-card {
+      display: none;
+  
+      @media (min-width: 1400px) {
+       display: block;
+      }
+    }
+  
+    .app-f {
+      display: flex;
+      flex-direction: column;     
+      text-align: center;
+      gap: 3rem; 
+    
+    }  
+   
+  }
+
+  
+  .f1 { 
+   
+  
+    p{
+       color: var(--color-gray6);
+    }
+  
+    @media (min-width: 1400px) {
+      text-align: left;
+     }
+  
+  }
+  
+  .service {
+    gap: 2rem;  
+    display: grid;
+  
+    @media (min-width: 768px) {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  
+  .s-card {
+    display: grid;
+     grid-template-columns: 60px 1fr;
+     text-align: left;
+     gap: 1rem;
+     margin-bottom: 2rem;
+     
+     h4 {
+      margin-top: 0;
+      margin-bottom: 0.5rem;
+      font-weight: 800px;
+     }
+  
+     p {
+      color: var(--color-gray7);
+     }
+  }
+  
+  .img-s {
+    background: var(--color-gray1);
+    padding: 1rem;
+    border-radius: 10px;
+  }

@@ -1,0 +1,16 @@
+footer {
+    font-size: 14px;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    color: var(--color-gray6);
+    
+    .container {
+      @include footer-display;
+    }
+    
+    .credit {
+      display: none;
+
+    }
+    
+  }

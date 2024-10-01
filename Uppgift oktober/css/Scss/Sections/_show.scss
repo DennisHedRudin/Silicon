@@ -1,0 +1,43 @@
+#show {
+    display: none;
+   
+  
+    ul {
+      padding-left: 0;
+    }
+  
+    li{
+      color: var(--color-gray7);
+      list-style: none; 
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      margin-bottom: 1rem;   
+    }
+    
+    @media (min-width: 1400px){
+      width: 1076px;
+      display: block;
+      margin-top: 4rem;
+      display: flex;
+      justify-content: space-between;
+    }
+  
+    .banking {
+      display: flex;
+      flex-direction: column;
+    }
+  
+  }
+  
+  .learn-more {
+   @include btn;
+   @include button-colors;
+  }
+  
+
+  .learn-more:hover {
+    background-color: var(--color-gray5);
+    color: var(--color-white);
+    text-decoration: none;
+  }
