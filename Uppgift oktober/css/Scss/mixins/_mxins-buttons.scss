@@ -1,0 +1,49 @@
+@mixin button-colors($bg-color, $text-color, $hover-bg-color, $hover-text-color, $border-color: null, $hover-border-color: null) {
+    background-color: $bg-color;
+    color: $text-color;
+    border-color: if($border-color, $border-color, $bg-color);
+    outline: none !important;
+
+    &:hover {
+        background-color: $hover-bg-color;
+        color: $hover-text-color;
+        outline: none !important;
+        border-color: if($hover-border-color, $hover-border-color, $bg-color);
+    }
+
+    &:hover, &:focus, &:active {
+        outline: none !important;
+    }
+
+
+}
+
+@mixin btn {
+  
+    border-radius: 8px;
+    padding: 12px 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none !important;
+    border: 0;
+
+    &:hover {
+         transition: 0.25s;   
+         text-decoration: none;
+    }  
+}
+
+@mixin discover {
+    height: 44px;
+    width: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    border: 1px solid;    
+    cursor: pointer;
+}
+
+
+

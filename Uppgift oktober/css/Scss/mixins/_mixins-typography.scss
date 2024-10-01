@@ -1,0 +1,14 @@
+@mixin text {
+    font-family: "Manrope", sans-serif;
+    line-height: 1.6;
+    font-optical-sizing: auto;
+    margin: 0;
+    padding: 0;
+}
+
+@mixin heading {
+    @include text;
+    font-weight: 800;
+    line-height: 1.3;
+}
+

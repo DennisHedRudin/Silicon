@@ -1,1 +1,19 @@
-.btn-dark
+
+
+.btn-dark, .btn-primary {
+    @include btn;
+    @include button-colors;
+}
+
+
+
+.btn-discover {
+    @include discover;
+}
+
+.btn-discover-open {
+    @include discover;   
+    border: none;
+    
+    
+}

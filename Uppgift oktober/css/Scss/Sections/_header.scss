@@ -1,0 +1,164 @@
+.header {
+    header .container {
+        @include header-display;
+      }
+      
+      
+      
+      a { 
+        color: var(--color-primary);
+        text-decoration: none;
+      }
+      
+      a:hover {
+        color: var(--color-primary);
+        text-decoration: underline;
+      }
+      
+      
+      #logo-dark {
+        display: none;
+      }
+      
+      .btn-primary {
+        @include btn;
+        @include button-colors;
+      }
+      
+      
+      
+      .btn-mobile {
+        background-color: transparent;
+        border: none;
+        font-size: 2rem;
+      }
+      
+   
+      
+      .btn-primary:hover {
+        background-color: var(--color-gray5);
+        color: var(--color-white);
+        text-decoration: none;
+      }
+      
+      .btn-app {
+        background-color: var(--color-dark);
+        color: var(--color-white);
+        border-radius: 8px;
+        padding: 12px 25px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+      }
+      
+      .btn-app:hover {
+        background-color: var(--color-primary);
+        color: var(--color-white);
+        text-decoration: none;
+      }
+      
+      .btn-circle {
+        height: 44px;
+        width: 44px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        border: 1px solid var(--color-gray5);
+        background-color: var(--color-white);
+        color: var(--color-gray8);
+      }
+      
+      .btn-toggle-switch {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+      
+      .btn-toggle-switch .label {
+        display: none;
+      }
+      
+      
+      
+      .toggle-switch {
+        position: relative;
+        display: inline-block;
+        width: 45px;
+        height: 25px;
+      }
+      
+      .toggle-switch input {
+        opacity: 0;
+      }
+      
+      .toggle-switch input:checked + .slider {
+        background-color: var(--color-primary);
+      }
+      
+      .toggle-switch input:focus + .slider {
+        box-shadow: 0 0 1px var(--color-primary);
+      }
+      
+      .toggle-switch input:checked + .slider:before {
+        transform: translateX(18px);
+        background-color: var(--color-white);
+      }
+      
+      .toggle-switch .slider {
+        position: absolute;
+        cursor: pointer;
+        inset: 0;
+        background-color: var(--color-gray5);
+        transition: all 0.2s;
+      }
+      
+      .toggle-switch .slider:before {
+        position: absolute;
+        content: "";
+        height: 20px;
+        width: 20px;
+        left: 3px;
+        bottom: 2.5px;
+        background-color: var(--color-white);
+        transition: all 0.2s;
+      }
+      
+      .toggle-switch .slider.round {
+        border-radius: 35px;
+      }
+      
+      .toggle-switch .slider.round:before {
+        border-radius: 50%;
+      }
+      
+      .navbar {
+        display: none;   
+      }
+      
+      .nav-link {
+        color: var(--color-gray8);
+        font-weight: 600;
+        text-decoration: none;  
+      }
+      
+      .nav-link:hover {
+        color: var(--color-primary);
+        text-decoration: underline;
+      }
+      
+      .active {
+        color: var(--color-primary);
+        text-decoration: underline;
+      }
+      
+      #auth-signin {
+        display: none;
+      }
+      
+}
+
+.hero {
+    background-color: var(--color-gradient);
+}
