@@ -17,12 +17,26 @@ body, section, div, header, footer, main, aside, nav, blockquote, p, span {
     padding: 0;
   }
 
-  img, svg {
-    vertical-align: middle;
+  html {
+    color-scheme: light;
   }
 
+  
   body {
     @include text;
     font-size: 16px;
-    color: #565973;
+    
+    
+    
+    .main-body {
+      @include main-body;
+    }
+  }
+
+  .container {
+    width: 100%;
+    padding-left: var(--container-padding);
+    padding-right: var(--container-padding);
+    margin-left: auto;
+    margin-right: auto;
   }

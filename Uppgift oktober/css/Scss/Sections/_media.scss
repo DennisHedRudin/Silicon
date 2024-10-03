@@ -1,0 +1,70 @@
+@media (min-width: 768px) {
+
+    .container {
+      max-width: 720px;
+    }
+    .btn-toggle-switch .label {
+      display: block;
+    }
+    
+    header .container {     
+      gap: 3rem;      
+    }
+    
+    
+    
+    footer {
+      .credit {
+        display: block;
+      }    
+    }
+    
+    #partners {
+      display: block;
+      
+    }
+    
+    #brand-5, #brand-6 {
+      display: none;
+    }
+    
+    
+    
+  }
+  
+  
+  @media (min-width: 1400px) {
+    .container {
+      max-width: 1320px;       
+    }
+    
+    header .container {  
+      grid-template-columns: auto 1fr auto auto;   
+      gap: 3rem;      
+    }
+    
+    #auth-signin {
+      display: block;
+    }
+    
+    .btn-mobile {
+      display: none;
+    }
+    
+    .navbar {
+      display: block;   
+    }
+    
+ 
+    footer {
+      .credit {
+        display: block;
+      } 
+      
+      
+    }
+    
+    #brand-5, #brand-6 {
+      display: flex;
+    }
+  }

@@ -1,5 +1,10 @@
 #show {
     display: none;
+
+    h2 {
+      font-size: 32px;
+      font-weight: 800;
+    }
    
   
     ul {
@@ -32,7 +37,7 @@
   
   .learn-more {
    @include btn;
-   @include button-colors;
+   @include button-colors(var(--color-primary), var(--color-white), var(--color-gray1), var(--color-gray8), $border-color: null, $hover-border-color: null);
   }
   
 

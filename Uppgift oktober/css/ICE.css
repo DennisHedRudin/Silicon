@@ -27,7 +27,7 @@
 
 
 * {
-  box-sizing: 0;
+  box-sizing: border-box;
   -webkit-tap-highlight-color: rgb(0, 0, 0, 0);
 }
 
@@ -60,8 +60,6 @@ h1, h2, h3, h4, h5, h6 {
 
 .dark {
   color-scheme: dark;
-  background-color: var(--color-dark);
-  color: var(--color-white);
 
   #logo {
     display: none;
@@ -282,8 +280,11 @@ a:hover {
 
 
 #start {
+  
   background: rgb(99,102,241);
   background: linear-gradient(360deg, rgba(99, 102, 241, 0.1) 0%, rgb(218, 70, 239, 0.05) 42%, rgb(241, 244, 253, 0.07) 83%);
+  
+
   padding-bottom: 2rem;
 
   overflow: hidden;
@@ -347,6 +348,7 @@ a:hover {
     p {
       font-size: 18px;
       margin-bottom: 3rem;
+      color: var(--color-gray7);
 
     }
 
@@ -858,11 +860,7 @@ a:hover {
         gap: 1rem;
       }
     
-      @media (min-width: 1400px) {
-               
       }
-      
-    }
     
     
     .qa {

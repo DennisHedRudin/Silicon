@@ -1,0 +1,46 @@
+.dark {
+  
+    color-scheme: dark;
+    
+    
+   
+    .btn-app { 
+      display: none;
+    }
+
+    #logo {
+      display: none;
+        }
+  
+      #logo-dark {
+        display: block;
+      }
+    
+      #app-link {
+        display: none;
+      }
+      
+
+      #dark-app {
+        display: flex;
+      }
+
+      .app-link-dark {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+  
+        @media (min-width: 1400px) {
+          flex-direction: row;
+        }
+  
+  
+      }
+  
+  
+  
+    }
+
+    #dark-app {
+      display: none;
+    }

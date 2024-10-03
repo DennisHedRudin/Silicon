@@ -200,13 +200,13 @@
   
   .btn-question {
     @include discover;
-    @include button-colors;
+    @include button-colors(var(--color-gray1), var(--color-white), var(--color-primary), var(--color-primary), $border-color: null, $hover-border-color: null);
   }
   
   
   .btn-answer {
     @include discover;
-    @include button-colors;
+    @include button-colors(var(--color-primary), var(--color-white), var(--color-gray1), var(--color-gray8), $border-color: null, $hover-border-color: null);
     
     @media (min-width: 768px) {
       display: none;
@@ -215,8 +215,9 @@
   
   .btn-answer1 {
     @include discover;
-    @include button-colors;
+    @include button-colors(var(--color-primary), var(--color-white), var(--color-gray1), var(--color-gray8), $border-color: null, $hover-border-color: null);
     display: none;
+    
     
     @media (min-width: 768px) {
       display: flex;

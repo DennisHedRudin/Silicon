@@ -1,16 +1,18 @@
-.header {
-    header .container {
+ 
+
+
+     .container {
         @include header-display;
       }
       
       
       
-      a { 
+      .nav-link { 
         color: var(--color-primary);
         text-decoration: none;
       }
       
-      a:hover {
+      .nav-link:hover {
         color: var(--color-primary);
         text-decoration: underline;
       }
@@ -22,7 +24,7 @@
       
       .btn-primary {
         @include btn;
-        @include button-colors;
+        @include button-colors(var(--color-primary), var(--color-white), var(--color-gray1), var(--color-gray8), $border-color: null, $hover-border-color: null);
       }
       
       
@@ -35,11 +37,7 @@
       
    
       
-      .btn-primary:hover {
-        background-color: var(--color-gray5);
-        color: var(--color-white);
-        text-decoration: none;
-      }
+      
       
       .btn-app {
         background-color: var(--color-dark);
@@ -58,13 +56,25 @@
         text-decoration: none;
       }
       
-      .btn-circle {
-        height: 44px;
-        width: 44px;
+      .btn-app-dark {
+        background-color: var(--color-white);
+        color: var(--color-white);
+        border-radius: 8px;
+        padding: 12px 25px;
         display: flex;
         justify-content: center;
         align-items: center;
-        border-radius: 50%;
+        text-decoration: none;
+      }
+      
+      .btn-app-dark:hover {
+        background-color: var(--color-primary);
+        color: var(--color-white);
+        text-decoration: none;
+      }
+      
+      .btn-circle {
+        @include discover;
         border: 1px solid var(--color-gray5);
         background-color: var(--color-white);
         color: var(--color-gray8);
@@ -157,5 +167,5 @@
         display: none;
       }
       
-}
+
 

@@ -5,6 +5,8 @@
 const darkmodeSwitch = document.querySelector('#darkmode-switch')
 const hasDarkmode = localStorage.getItem('darkmode')
 
+
+
 if(hasDarkmode == null) {
   if(window.matchMedia('(prefers-color-scheme: dark)').matches) {
     enableDarkMode()
