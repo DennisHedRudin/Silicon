@@ -37,7 +37,7 @@
   
   .learn-more {
    @include btn;
-   @include button-colors(var(--color-primary), var(--color-white), var(--color-gray1), var(--color-gray8), $border-color: null, $hover-border-color: null);
+   @include button-colors(var(--color-primary), #fff, var(--color-gray1), var(--color-gray8), $border-color: null, $hover-border-color: null);
   }
   
 

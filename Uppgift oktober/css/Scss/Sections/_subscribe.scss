@@ -13,6 +13,7 @@
   
   .bell {
     display: flex;
+    align-items: center;
   
     img {
       height: 78px;
@@ -42,7 +43,7 @@
   
   .btn-sub {
     background-color: var(--color-primary);
-    color: var(--color-white);  
+    color: #fff;  
     padding: .5em 2em;
     display: flex;
     justify-content: center;

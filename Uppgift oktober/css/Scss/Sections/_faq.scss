@@ -13,6 +13,12 @@
       flex-direction: column;
       grid-area: questions;
       
+      .btn-discover {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        margin-right: 1rem;
+      }
+      
       @media (min-width: 768px) {
         gap: 2rem;
         
@@ -25,8 +31,7 @@
       @media (min-width: 1400px) {
         text-align: left;
         justify-content: left;
-        padding-bottom: 0;
-        
+        padding-bottom: 0;       
         
       }
     }
@@ -85,6 +90,7 @@
     text-align: left;
     border: solid, var(--color-gray2);
     border-top: none;
+    background-color: var(--bg-q);
     
     h4 {
       font-size: 16px;
@@ -106,6 +112,7 @@
     align-items: center;
     text-align: left;
     border: solid, var(--color-gray2);
+    background-color: var(--bg-q);
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     
@@ -130,8 +137,7 @@
     align-items: center;
     text-align: left;
     border: solid, var(--color-gray2);
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
+    background-color: var(--bg-q);
     
     
     h4 {
@@ -162,6 +168,7 @@
     border: solid;
     border-top: none;
     border-color: var(--color-gray2);
+    background-color: var(--bg-q);
     
     @media (min-width: 768px) {
       display: none;
@@ -187,10 +194,15 @@
   
   
   .btn-discover1 {
-    display: none;
-    
-    @media (min-width: 768px) {
-      display: block;
+    display: none;   
+        
+     
+      
+      @media (min-width: 768px) {
+        display: block;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        margin-right: 1rem
     }
   }
   
@@ -208,6 +220,9 @@
     @include discover;
     @include button-colors(var(--color-primary), var(--color-white), var(--color-gray1), var(--color-gray8), $border-color: null, $hover-border-color: null);
     
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+
     @media (min-width: 768px) {
       display: none;
     }
@@ -223,6 +238,8 @@
       display: flex;
       justify-content: center;
       align-items: center;
+      margin-top: 1rem;
+      margin-bottom: 1rem;
       
     }
   }
@@ -236,7 +253,7 @@
   text-align: left;
   gap: 1rem;
   border: solid;
-  border-color: var(--color-gray2);
+  border-color: var(--border-contact);
   padding: 2rem;
   margin-top: 2rem;
   border-radius: 6px;
@@ -256,7 +273,7 @@
   text-align: left;
   gap: 1rem;
   border: solid;
-  border-color: var(--color-gray2);
+  border-color: var(--border-contact);
   padding: 2rem;
   margin-top: 2rem;
   border-radius: 6px;

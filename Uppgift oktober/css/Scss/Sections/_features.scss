@@ -1,6 +1,8 @@
-#features {
-  
-    @include features-display;
+#features {  
+    
+      @include features-display;
+      
+    
   
     .img-card {
       display: none;
@@ -25,14 +27,21 @@
     
     h2 {
       font-weight: 800px;
-      font-size: 40px;
+      font-size: 28px;
       margin-top: 0;
+      margin-bottom: 2rem;
+      
+      @media (min-width: 1400px) {
+        font-size: 40px;
+       
+       }
+
     }
-  
+    
     p{
-       color: var(--color-gray6);
+      color: var(--color-gray6);
     }
-  
+    
     @media (min-width: 1400px) {
       text-align: left;
      }

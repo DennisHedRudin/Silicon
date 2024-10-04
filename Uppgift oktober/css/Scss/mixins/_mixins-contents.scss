@@ -14,9 +14,10 @@
     display: grid;
     grid-template-columns: 1fr auto auto;
     align-items: center;
-    gap: 1.5rem;
+    // gap: 1.5rem;
     padding-top: 1rem;
     padding-bottom: 1rem;
+   
 }
 
 @mixin start-display {
@@ -51,8 +52,10 @@
 
 @mixin features-display {
     display: grid;
-    margin: 4rem;
-    gap: 4rem;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+ 
+    
 
     @media (min-width: 1400px) {
         grid-template-columns: 1fr 2fr;

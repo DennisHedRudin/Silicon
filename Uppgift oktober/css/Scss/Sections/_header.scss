@@ -1,11 +1,13 @@
  
 
+   
+    .header, .container {
+      @include header-display;
+    }
 
-     .container {
-        @include header-display;
-      }
-      
-      
+    .header {
+      background-color: var(--bg-head); 
+    }
       
       .nav-link { 
         color: var(--color-primary);
@@ -24,7 +26,7 @@
       
       .btn-primary {
         @include btn;
-        @include button-colors(var(--color-primary), var(--color-white), var(--color-gray1), var(--color-gray8), $border-color: null, $hover-border-color: null);
+        @include button-colors(var(--color-primary), #fff, var(--color-gray1), var(--color-gray8), $border-color: null, $hover-border-color: null);
       }
       
       
@@ -32,7 +34,13 @@
       .btn-mobile {
         background-color: transparent;
         border: none;
-        font-size: 2rem;
+        padding-top: 0.2rem; 
+        margin-left: 1.5rem; 
+        
+        @media (min-width: 768px) {
+          margin-left: 0;
+        }
+        
       }
       
    
@@ -57,7 +65,7 @@
       }
       
       .btn-app-dark {
-        background-color: var(--color-white);
+        background-color: var(--color-dark);
         color: var(--color-white);
         border-radius: 8px;
         padding: 12px 25px;
@@ -75,16 +83,16 @@
       
       .btn-circle {
         @include discover;
-        border: 1px solid var(--color-gray5);
-        background-color: var(--color-white);
-        color: var(--color-gray8);
-      }
+        border: none;
+        background-color: var(--white-to-gray);
+        }
       
       .btn-toggle-switch {
         display: flex;
         align-items: center;
-        gap: 10px;
-      }
+        gap: 10px;    
+       
+     }
       
       .btn-toggle-switch .label {
         display: none;

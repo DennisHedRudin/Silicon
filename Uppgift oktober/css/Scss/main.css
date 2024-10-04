@@ -46,6 +46,15 @@ body .main-body {
 .dark .btn-app {
   display: none;
 }
+.dark .light-vector {
+  display: none;
+}
+.dark .dark-vector {
+  display: flex;
+}
+.dark .qa, .dark .qa1, .dark .qa2, .dark .answer {
+  box-shadow: none;
+}
 .dark #logo {
   display: none;
 }
@@ -107,13 +116,16 @@ h6 {
   font-size: 16px;
 }
 
-.container {
+.header, .container {
   display: grid;
   grid-template-columns: 1fr auto auto;
   align-items: center;
-  gap: 1.5rem;
   padding-top: 1rem;
   padding-bottom: 1rem;
+}
+
+.header {
+  background-color: var(--bg-head);
 }
 
 .nav-link {
@@ -140,7 +152,7 @@ h6 {
   border: 0;
   cursor: pointer;
   background-color: var(--color-primary);
-  color: var(--color-white);
+  color: #fff;
   border-color: var(--color-primary);
   outline: none !important;
 }
@@ -161,7 +173,13 @@ h6 {
 .btn-mobile {
   background-color: transparent;
   border: none;
-  font-size: 2rem;
+  padding-top: 0.2rem;
+  margin-left: 1.5rem;
+}
+@media (min-width: 768px) {
+  .btn-mobile {
+    margin-left: 0;
+  }
 }
 
 .btn-app {
@@ -182,7 +200,7 @@ h6 {
 }
 
 .btn-app-dark {
-  background-color: var(--color-white);
+  background-color: var(--color-dark);
   color: var(--color-white);
   border-radius: 8px;
   padding: 12px 25px;
@@ -207,9 +225,8 @@ h6 {
   border-radius: 50%;
   border: 1px solid;
   cursor: pointer;
-  border: 1px solid var(--color-gray5);
-  background-color: var(--color-white);
-  color: var(--color-gray8);
+  border: none;
+  background-color: var(--white-to-gray);
 }
 
 .btn-toggle-switch {
@@ -343,6 +360,7 @@ h6 {
 @media (min-width: 1400px) {
   #start .headline h1 {
     text-align: left;
+    margin-top: 10rem;
   }
 }
 #start .content {
@@ -402,7 +420,7 @@ h6 {
 #start .img-start .img-back {
   position: absolute;
   z-index: -10;
-  bottom: 0;
+  bottom: -200px;
   right: 100px;
   width: 70%;
   height: auto;
@@ -410,23 +428,26 @@ h6 {
 @media (min-width: 1400px) {
   #start .img-start .img-back {
     width: auto;
-    bottom: -100px;
+    bottom: -400px;
     right: 230px;
   }
 }
 #start .img-start .img-front {
   position: absolute;
   z-index: -5;
-  bottom: 0;
+  bottom: -200px;
   right: 0;
   width: 70%;
   height: auto;
 }
 @media (min-width: 1400px) {
   #start .img-start .img-front {
-    bottom: -100px;
+    bottom: -400px;
     width: auto;
   }
+}
+#start .dark-vector {
+  display: none;
 }
 
 #partners {
@@ -443,6 +464,7 @@ h6 {
 
 .brand-box {
   border: 1px solid var(--color-gray3);
+  background-color: var(--bg-partner);
   border-radius: 8px;
   height: 100px;
   width: 200px;
@@ -453,8 +475,8 @@ h6 {
 
 #features {
   display: grid;
-  margin: 4rem;
-  gap: 4rem;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
 }
 @media (min-width: 1400px) {
   #features {
@@ -478,8 +500,14 @@ h6 {
 
 .f1 h2 {
   font-weight: 800px;
-  font-size: 40px;
+  font-size: 28px;
   margin-top: 0;
+  margin-bottom: 2rem;
+}
+@media (min-width: 1400px) {
+  .f1 h2 {
+    font-size: 40px;
+  }
 }
 .f1 p {
   color: var(--color-gray6);
@@ -523,7 +551,7 @@ h6 {
 }
 
 #how {
-  background-color: var(--color-gray1);
+  background-color: var(--clr-bg-100);
   padding-top: 3rem;
   padding-bottom: 3rem;
   text-align: center;
@@ -651,7 +679,7 @@ h6 {
   border: 0;
   cursor: pointer;
   background-color: var(--color-primary);
-  color: var(--color-white);
+  color: #fff;
   border-color: var(--color-primary);
   outline: none !important;
 }
@@ -700,11 +728,12 @@ h6 {
 
 #clients {
   display: none;
-  background-color: var(--color-gray1);
+  background-color: var(--clr-bg-100);
 }
-#clients .head-client {
+#clients h1 {
   font-weight: 800;
   font-size: 40px;
+  margin-top: 1rem;
 }
 @media (min-width: 1400px) {
   #clients {
@@ -717,6 +746,7 @@ h6 {
   grid-template-columns: 1fr 1fr 1fr;
   padding-top: 3rem;
   padding-bottom: 3rem;
+  align-items: flex-start;
 }
 .love .head-client {
   margin-right: 2rem;
@@ -769,6 +799,11 @@ h6 {
   display: flex;
   flex-direction: column;
   grid-area: questions;
+}
+#FAQ .questions .btn-discover {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  margin-right: 1rem;
 }
 @media (min-width: 768px) {
   #FAQ .questions {
@@ -828,6 +863,7 @@ h6 {
   text-align: left;
   border: solid, var(--color-gray2);
   border-top: none;
+  background-color: var(--bg-q);
 }
 .qa h4 {
   font-size: 16px;
@@ -847,6 +883,7 @@ h6 {
   align-items: center;
   text-align: left;
   border: solid, var(--color-gray2);
+  background-color: var(--bg-q);
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
 }
@@ -868,8 +905,7 @@ h6 {
   align-items: center;
   text-align: left;
   border: solid, var(--color-gray2);
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
+  background-color: var(--bg-q);
 }
 .qa2 h4 {
   font-size: 16px;
@@ -896,6 +932,7 @@ h6 {
   border: solid;
   border-top: none;
   border-color: var(--color-gray2);
+  background-color: var(--bg-q);
 }
 @media (min-width: 768px) {
   .answr {
@@ -925,6 +962,9 @@ h6 {
 @media (min-width: 768px) {
   .btn-discover1 {
     display: block;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin-right: 1rem;
   }
 }
 
@@ -969,6 +1009,8 @@ h6 {
   color: var(--color-white);
   border-color: var(--color-primary);
   outline: none !important;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 .btn-answer:hover {
   background-color: var(--color-gray1);
@@ -1014,6 +1056,8 @@ h6 {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
   }
 }
 
@@ -1023,7 +1067,7 @@ h6 {
   text-align: left;
   gap: 1rem;
   border: solid;
-  border-color: var(--color-gray2);
+  border-color: var(--border-contact);
   padding: 2rem;
   margin-top: 2rem;
   border-radius: 6px;
@@ -1041,7 +1085,7 @@ h6 {
   text-align: left;
   gap: 1rem;
   border: solid;
-  border-color: var(--color-gray2);
+  border-color: var(--border-contact);
   padding: 2rem;
   margin-top: 2rem;
   border-radius: 6px;
@@ -1075,6 +1119,7 @@ h6 {
 
 .bell {
   display: flex;
+  align-items: center;
 }
 .bell img {
   height: 78px;
@@ -1100,7 +1145,7 @@ h6 {
 
 .btn-sub {
   background-color: var(--color-primary);
-  color: var(--color-white);
+  color: #fff;
   padding: 0.5em 2em;
   display: flex;
   justify-content: center;

@@ -1,11 +1,12 @@
 #clients {
     display: none;
 
-    background-color: var(--color-gray1);
+    background-color: var(--clr-bg-100);
 
-    .head-client {
+    h1 {
       font-weight: 800;
       font-size: 40px;
+      margin-top: 1rem;
     }
 
     @media (min-width: 1400px) {
@@ -18,6 +19,7 @@ display: grid;
 grid-template-columns: 1fr 1fr 1fr;
 padding-top: 3rem;
 padding-bottom: 3rem;
+align-items: flex-start;
 
 .head-client {
   margin-right: 2rem;

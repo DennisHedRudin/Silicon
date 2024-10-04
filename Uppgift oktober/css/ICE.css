@@ -812,15 +812,21 @@ a:hover {
       .info {
         grid-area: headline-q;
         
+        
         @media (min-width: 1400px) {
           text-align: left;
           justify-content: left;
           padding-bottom: 0;
+          margin-right: 2rem;
+          
           
           
         }
       }
       
+      .info-headline {
+        grid-area: head;
+      }
       
 
       .btn-contact {
@@ -832,12 +838,18 @@ a:hover {
         }
       }
       
+      @media (min-width: 768px) {
+        display: grid;
+        grid-template-areas: "head questions contact";        
+        align-items: center;
+      }
+
       @media (min-width: 1400px) {
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-areas:  "headline-q questions"
-        "contact questions"
-        ;
+        "headline-q questions";
+        align-items: self-start;
         
       }
 

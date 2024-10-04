@@ -30,6 +30,7 @@
   
         @media (min-width: 1400px) {
           text-align: left;
+          margin-top: 10rem;
            }
          }
   
@@ -98,14 +99,14 @@
       .img-back {
         position: absolute;
         z-index: -10;
-        bottom: 0;
+        bottom: -200px;
         right: 100px;
         width: 70%;  
         height: auto;  
   
         @media (min-width: 1400px) {
           width: auto;
-          bottom: -100px;
+          bottom: -400px;
           right: 230px;
         }
         
@@ -115,15 +116,20 @@
       .img-front {
         position: absolute;
         z-index: -5;
-        bottom: 0;
+        bottom: -200px;
         right: 0;
         width: 70%; 
         height: auto;
         
         @media (min-width: 1400px) {
-          bottom: -100px;
+          bottom: -400px;
           width: auto;
         }
       }
     }
+
+    .dark-vector {
+      display: none;
+    }
+
   }
