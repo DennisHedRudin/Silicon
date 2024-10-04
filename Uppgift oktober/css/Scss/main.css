@@ -50,7 +50,7 @@ body .main-body {
   display: none;
 }
 .dark .dark-vector {
-  display: flex;
+  display: block;
 }
 .dark .qa, .dark .qa1, .dark .qa2, .dark .answer {
   box-shadow: none;
@@ -72,7 +72,7 @@ body .main-body {
   flex-direction: column;
   gap: 1rem;
 }
-@media (min-width: 1400px) {
+@media (min-width: 768px) {
   .dark .app-link-dark {
     flex-direction: row;
   }
@@ -382,7 +382,7 @@ h6 {
   flex-direction: column;
   gap: 1rem;
 }
-@media (min-width: 1400px) {
+@media (min-width: 765px) {
   #start .content .app-link {
     flex-direction: row;
   }
@@ -446,7 +446,8 @@ h6 {
     width: auto;
   }
 }
-#start .dark-vector {
+
+.dark-vector {
   display: none;
 }
 
@@ -716,6 +717,10 @@ h6 {
   }
 }
 
+h2 {
+  padding-bottom: 2rem;
+}
+
 .flex-2 {
   display: flex;
   margin-bottom: 2rem;
@@ -792,9 +797,6 @@ h6 {
   padding-top: 4rem;
   padding-bottom: 3rem;
 }
-#FAQ .text {
-  margin-bottom: 5rem;
-}
 #FAQ .questions {
   display: flex;
   flex-direction: column;
@@ -813,11 +815,20 @@ h6 {
 #FAQ .info {
   grid-area: headline-q;
 }
+#FAQ .info h2 {
+  padding-bottom: 2rem;
+}
+#FAQ .info p {
+  padding-bottom: 2rem;
+}
 @media (min-width: 1400px) {
   #FAQ .info {
     text-align: left;
     justify-content: left;
     padding-bottom: 0;
+  }
+  #FAQ .info p {
+    padding-bottom: 0rem;
   }
 }
 #FAQ .btn-contact {
@@ -855,6 +866,13 @@ h6 {
     gap: 1rem;
   }
 }
+@media (min-width: 1400px) {
+  #contact {
+    margin-bottom: 27rem;
+    padding-right: 7rem;
+  }
+}
+
 .qa {
   display: grid;
   grid-template-columns: 6fr 1fr;
